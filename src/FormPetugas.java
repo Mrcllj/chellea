@@ -49,6 +49,20 @@ public class FormPetugas extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
+        simpan2 = new javax.swing.JButton();
+        judul2 = new javax.swing.JTextField();
+        ubah2 = new javax.swing.JButton();
+        pengarang2 = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        hapus4 = new javax.swing.JButton();
+        jumlah2 = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        tambah2 = new javax.swing.JButton();
+        jTextField6 = new javax.swing.JTextField();
+        no2 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -254,15 +268,131 @@ public class FormPetugas extends javax.swing.JFrame {
 
         jPanel6.setBackground(new java.awt.Color(101, 133, 155));
 
+        simpan2.setBackground(new java.awt.Color(0, 246, 45));
+        simpan2.setText("Simpan");
+
+        judul2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        ubah2.setBackground(new java.awt.Color(0, 246, 45));
+        ubah2.setText("Ubah");
+
+        pengarang2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        pengarang2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pengarang2ActionPerformed(evt);
+            }
+        });
+
+        jLabel12.setFont(new java.awt.Font("Tekton Pro", 1, 18)); // NOI18N
+        jLabel12.setText("Password");
+
+        jLabel13.setFont(new java.awt.Font("Tekton Pro", 1, 18)); // NOI18N
+        jLabel13.setText("Id");
+
+        jLabel14.setFont(new java.awt.Font("Tekton Pro", 1, 18)); // NOI18N
+        jLabel14.setText("Alamat");
+
+        hapus4.setBackground(new java.awt.Color(0, 246, 45));
+        hapus4.setText("Hapus");
+        hapus4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hapus4ActionPerformed(evt);
+            }
+        });
+
+        jumlah2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jumlah2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jumlah2ActionPerformed(evt);
+            }
+        });
+
+        jLabel15.setFont(new java.awt.Font("Tekton Pro", 1, 18)); // NOI18N
+        jLabel15.setText("Nama ");
+
+        jLabel16.setFont(new java.awt.Font("Tekton Pro", 1, 18)); // NOI18N
+        jLabel16.setText("Gmail");
+
+        tambah2.setBackground(new java.awt.Color(0, 246, 45));
+        tambah2.setText("Tambah");
+
+        jTextField6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField6ActionPerformed(evt);
+            }
+        });
+
+        no2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 283, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(judul2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(no2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pengarang2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumlah2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(tambah2)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(hapus4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(ubah2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(simpan2)
+                .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tambah2)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(no2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(judul2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel15))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pengarang2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel14))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel16)
+                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(simpan2)
+                            .addComponent(hapus4)
+                            .addComponent(ubah2)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jumlah2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -478,6 +608,22 @@ public class FormPetugas extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_hapus3ActionPerformed
 
+    private void pengarang2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pengarang2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pengarang2ActionPerformed
+
+    private void hapus4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapus4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hapus4ActionPerformed
+
+    private void jumlah2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jumlah2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jumlah2ActionPerformed
+
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField6ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -516,10 +662,18 @@ public class FormPetugas extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton hapus;
+    private javax.swing.JButton hapus1;
+    private javax.swing.JButton hapus2;
     private javax.swing.JButton hapus3;
+    private javax.swing.JButton hapus4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -539,19 +693,27 @@ public class FormPetugas extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField judul;
     private javax.swing.JTextField judul1;
+    private javax.swing.JTextField judul2;
     private javax.swing.JTextField jumlah;
     private javax.swing.JTextField jumlah1;
+    private javax.swing.JTextField jumlah2;
     private javax.swing.JTextField no;
     private javax.swing.JTextField no1;
+    private javax.swing.JTextField no2;
     private javax.swing.JTextField pengarang;
     private javax.swing.JTextField pengarang1;
+    private javax.swing.JTextField pengarang2;
     private javax.swing.JButton simpan;
     private javax.swing.JButton simpan1;
+    private javax.swing.JButton simpan2;
     private javax.swing.JButton tambah;
     private javax.swing.JButton tambah1;
+    private javax.swing.JButton tambah2;
     private javax.swing.JButton ubah;
     private javax.swing.JButton ubah1;
+    private javax.swing.JButton ubah2;
     // End of variables declaration//GEN-END:variables
 }
