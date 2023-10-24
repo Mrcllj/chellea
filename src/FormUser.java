@@ -89,6 +89,8 @@ public class FormUser extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jTabbedPane1.setBackground(new java.awt.Color(153, 153, 153));
+
         jPanel3.setBackground(new java.awt.Color(101, 133, 155));
 
         penerbit.setBackground(new java.awt.Color(101, 133, 155));
